@@ -1,14 +1,24 @@
 import socket
-from config import HOST, PORTA
+import ssl
+
+from config import CERT_ARQUIVO, HOST, NOME_SERVIDOR_TLS, PORTA
 from protocolo import ErroProtocolo, enviar, receber
 
+
+def criar_contexto_tls():
+    contexto = ssl.create_default_context(cafile=CERT_ARQUIVO)
+    contexto.minimum_version = ssl.TLSVersion.TLSv1_2
+    return contexto
+
+
 def main():
+    contexto = criar_contexto_tls()
     while True:
         texto = input("Mensagem (ou 'sair'): ").strip()
         if texto.lower() == "sair":
-            print("Encerrando a conexão")
+            print("Encerrando o cliente.")
             break
-        
+
         partes = texto.split(maxsplit=1)
         acao = partes[0].lower() if partes else ""
         argumento = partes[1] if len(partes) > 1 else ""
@@ -18,18 +28,22 @@ def main():
             pedido["termo"] = argumento
         elif acao == "detalhar" and argumento.isdigit():
             pedido["id"] = int(argumento)
+
         try:
             with socket.create_connection((HOST, PORTA), timeout=5) as conexao:
-                enviar(conexao, pedido)
-                resposta = receber(conexao)
-                print(f"Servidor respondeu: {resposta}")
+                with contexto.wrap_socket(conexao, server_hostname=NOME_SERVIDOR_TLS) as conexao_tls:
+                    enviar(conexao_tls, pedido)
+                    resposta = receber(conexao_tls)
+                    print(f"Servidor respondeu: {resposta}")
         except ConnectionRefusedError:
             print("Não foi possível conectar: o servidor provavelmente tá offline!")
         except TimeoutError:
             print("O servidor demorou pra responder.")
+        except ssl.SSLCertVerificationError as erro:
+            print(f"Certificado do servidor não confiável: {erro.verify_message}")
         except ErroProtocolo as erro:
             print(f"Resposta inválida do servidor: {erro}")
-        
-        
+
+
 if __name__ == "__main__":
     main()

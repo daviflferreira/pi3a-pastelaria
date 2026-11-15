@@ -1,8 +1,9 @@
 import socket
-from config import HOST, PORTA
+from config import CERT_ARQUIVO, CHAVE_ARQUIVO, HOST, PORTA
 from protocolo import enviar, receber, ErroProtocolo
 import json
 from pathlib import Path
+import ssl
 
 PASTA_DADOS = Path(__file__).parent / "dados"
 CAMPOS_PUBLICOS = ("id", "nome", "categoria", "descricao", "ingredientes", "preco", "disponivel")
@@ -67,22 +68,34 @@ def processar(pedido):
         return {"ok": False, "erro": f"Ação desconhecida: {pedido.get('acao')!r}"}
     return funcao(pedido)
 
+def criar_contexto_tls():
+    contexto = ssl.SSLContext(ssl.PROTOCOL_TLS_SERVER)
+    contexto.minimum_version = ssl.TLSVersion.TLSv1_2
+    contexto.load_cert_chain(CERT_ARQUIVO, CHAVE_ARQUIVO)
+    return contexto
+
+
 def main():
+    contexto = criar_contexto_tls()
     with socket.create_server((HOST, PORTA)) as servidor:
-        print(f"Servidor ouvindo em {HOST}:{PORTA} (Ctrl+C pra parar)")
+        print(f"Servidor (TLS) ouvindo em {HOST}:{PORTA} (Ctrl+C pra parar)")
         try:
             while True:
                 conexao, endereco = servidor.accept()
-                with conexao:
-                    try:
-                        pedido = receber(conexao)
-                        print(f"{endereco[0]}:{endereco[1]} pediu: {pedido}")
-                        enviar(conexao, processar(pedido))
-                    except ErroProtocolo as erro:
-                        print(f"{endereco[0]}:{endereco[1]} mensagem inválida: {erro}")
-                    
+                origem = f"{endereco[0]}:{endereco[1]}"
+                try:
+                    with contexto.wrap_socket(conexao, server_side=True) as conexao_tls:
+                        pedido = receber(conexao_tls)
+                        print(f"{origem} [{conexao_tls.version()}] pediu: {pedido}")
+                        enviar(conexao_tls, processar(pedido))
+                except ssl.SSLError as erro:
+                    print(f"{origem} falha no TLS: {erro.reason}")
+                except ErroProtocolo as erro:
+                    print(f"{origem} mensagem inválida: {erro}")
+                except OSError as erro:
+                    print(f"{origem} erro de conexão: {erro}")
         except KeyboardInterrupt:
-            print("\nServidor Encerrado")
+            print("\nServidor encerrado")
             
 if __name__ == "__main__":
     main()
