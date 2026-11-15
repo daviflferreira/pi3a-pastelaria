@@ -9,7 +9,15 @@ def main():
             print("Encerrando a conexão")
             break
         
-        pedido = {"acao": texto}
+        partes = texto.split(maxsplit=1)
+        acao = partes[0].lower() if partes else ""
+        argumento = partes[1] if len(partes) > 1 else ""
+
+        pedido = {"acao": acao}
+        if acao == "buscar":
+            pedido["termo"] = argumento
+        elif acao == "detalhar" and argumento.isdigit():
+            pedido["id"] = int(argumento)
         try:
             with socket.create_connection((HOST, PORTA), timeout=5) as conexao:
                 enviar(conexao, pedido)

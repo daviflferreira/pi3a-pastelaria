@@ -1,0 +1,64 @@
+{
+  "itens": [
+    {
+      "id": 1,
+      "nome": "Pastel de Carne",
+      "categoria": "Pastéis salgados",
+      "descricao": "Carne moída temperada da casa",
+      "ingredientes": ["carne moída", "cebola", "azeitona"],
+      "preco": 9.00,
+      "disponivel": true,
+      "custo": 3.10
+    },
+    {
+      "id": 2,
+      "nome": "Pastel de Queijo",
+      "categoria": "Pastéis salgados",
+      "descricao": "Muçarela derretida",
+      "ingredientes": ["muçarela"],
+      "preco": 8.00,
+      "disponivel": true,
+      "custo": 2.70
+    },
+    {
+      "id": 3,
+      "nome": "Pastel de Frango com Catupiry",
+      "categoria": "Pastéis salgados",
+      "descricao": "Frango desfiado com catupiry",
+      "ingredientes": ["frango", "catupiry"],
+      "preco": 10.00,
+      "disponivel": false,
+      "custo": 3.40
+    },
+    {
+      "id": 4,
+      "nome": "Pastel de Pizza",
+      "categoria": "Pastéis salgados",
+      "descricao": "Presunto, muçarela, tomate e orégano",
+      "ingredientes": ["presunto", "muçarela", "tomate", "orégano"],
+      "preco": 9.50,
+      "disponivel": true,
+      "custo": 3.00
+    },
+    {
+      "id": 5,
+      "nome": "Pastel de Banana com Chocolate",
+      "categoria": "Pastéis doces",
+      "descricao": "Banana com chocolate ao leite",
+      "ingredientes": ["banana", "chocolate"],
+      "preco": 9.00,
+      "disponivel": true,
+      "custo": 2.90
+    },
+    {
+      "id": 6,
+      "nome": "Caldo de Cana 500 ml",
+      "categoria": "Bebidas",
+      "descricao": "Garapa gelada, pode pedir com limão",
+      "ingredientes": ["cana-de-açúcar"],
+      "preco": 7.00,
+      "disponivel": true,
+      "custo": 1.80
+    }
+  ]
+}
