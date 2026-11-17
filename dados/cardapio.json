@@ -3,62 +3,1083 @@
     {
       "id": 1,
       "nome": "Pastel de Carne",
-      "categoria": "Pastéis salgados",
-      "descricao": "Carne moída temperada da casa",
-      "ingredientes": ["carne moída", "cebola", "azeitona"],
-      "preco": 9.00,
+      "categoria": "Pastéis tradicionais – Carne",
+      "descricao": "",
+      "ingredientes": [
+        "carne"
+      ],
+      "preco": 12.0,
       "disponivel": true,
-      "custo": 3.10
+      "custo": null,
+      "fornecedor": null
     },
     {
       "id": 2,
-      "nome": "Pastel de Queijo",
-      "categoria": "Pastéis salgados",
-      "descricao": "Muçarela derretida",
-      "ingredientes": ["muçarela"],
-      "preco": 8.00,
+      "nome": "Pastel de Carne e Queijo",
+      "categoria": "Pastéis tradicionais – Carne",
+      "descricao": "",
+      "ingredientes": [
+        "carne",
+        "queijo"
+      ],
+      "preco": 12.0,
       "disponivel": true,
-      "custo": 2.70
+      "custo": null,
+      "fornecedor": null
     },
     {
       "id": 3,
-      "nome": "Pastel de Frango com Catupiry",
-      "categoria": "Pastéis salgados",
-      "descricao": "Frango desfiado com catupiry",
-      "ingredientes": ["frango", "catupiry"],
-      "preco": 10.00,
-      "disponivel": false,
-      "custo": 3.40
+      "nome": "Pastel de Carne e Catupiry",
+      "categoria": "Pastéis tradicionais – Carne",
+      "descricao": "",
+      "ingredientes": [
+        "carne",
+        "catupiry"
+      ],
+      "preco": 12.0,
+      "disponivel": true,
+      "custo": null,
+      "fornecedor": null
     },
     {
       "id": 4,
-      "nome": "Pastel de Pizza",
-      "categoria": "Pastéis salgados",
-      "descricao": "Presunto, muçarela, tomate e orégano",
-      "ingredientes": ["presunto", "muçarela", "tomate", "orégano"],
-      "preco": 9.50,
+      "nome": "Pastel de Carne e Milho",
+      "categoria": "Pastéis tradicionais – Carne",
+      "descricao": "",
+      "ingredientes": [
+        "carne",
+        "milho"
+      ],
+      "preco": 12.0,
       "disponivel": true,
-      "custo": 3.00
+      "custo": null,
+      "fornecedor": null
     },
     {
       "id": 5,
-      "nome": "Pastel de Banana com Chocolate",
-      "categoria": "Pastéis doces",
-      "descricao": "Banana com chocolate ao leite",
-      "ingredientes": ["banana", "chocolate"],
-      "preco": 9.00,
+      "nome": "Pastel de Carne e Guariroba",
+      "categoria": "Pastéis tradicionais – Carne",
+      "descricao": "",
+      "ingredientes": [
+        "carne",
+        "guariroba"
+      ],
+      "preco": 12.0,
       "disponivel": true,
-      "custo": 2.90
+      "custo": null,
+      "fornecedor": null
     },
     {
       "id": 6,
-      "nome": "Caldo de Cana 500 ml",
-      "categoria": "Bebidas",
-      "descricao": "Garapa gelada, pode pedir com limão",
-      "ingredientes": ["cana-de-açúcar"],
-      "preco": 7.00,
+      "nome": "Pastel de Carne e Bacon",
+      "categoria": "Pastéis tradicionais – Carne",
+      "descricao": "",
+      "ingredientes": [
+        "carne",
+        "bacon"
+      ],
+      "preco": 12.0,
       "disponivel": true,
-      "custo": 1.80
+      "custo": null,
+      "fornecedor": null
+    },
+    {
+      "id": 7,
+      "nome": "Pastel de Carne e Cheddar",
+      "categoria": "Pastéis tradicionais – Carne",
+      "descricao": "",
+      "ingredientes": [
+        "carne",
+        "cheddar"
+      ],
+      "preco": 12.0,
+      "disponivel": true,
+      "custo": null,
+      "fornecedor": null
+    },
+    {
+      "id": 8,
+      "nome": "Pastel de Carne e Pequi",
+      "categoria": "Pastéis tradicionais – Carne",
+      "descricao": "",
+      "ingredientes": [
+        "carne",
+        "pequi"
+      ],
+      "preco": 12.0,
+      "disponivel": true,
+      "custo": null,
+      "fornecedor": null
+    },
+    {
+      "id": 9,
+      "nome": "Pastel de Carne e Palmito",
+      "categoria": "Pastéis tradicionais – Carne",
+      "descricao": "",
+      "ingredientes": [
+        "carne",
+        "palmito"
+      ],
+      "preco": 12.0,
+      "disponivel": true,
+      "custo": null,
+      "fornecedor": null
+    },
+    {
+      "id": 10,
+      "nome": "Pastel de Carne e Azeitona",
+      "categoria": "Pastéis tradicionais – Carne",
+      "descricao": "",
+      "ingredientes": [
+        "carne",
+        "azeitona"
+      ],
+      "preco": 12.0,
+      "disponivel": true,
+      "custo": null,
+      "fornecedor": null
+    },
+    {
+      "id": 11,
+      "nome": "Pastel de Carne e Calabresa",
+      "categoria": "Pastéis tradicionais – Carne",
+      "descricao": "",
+      "ingredientes": [
+        "carne",
+        "calabresa"
+      ],
+      "preco": 12.0,
+      "disponivel": true,
+      "custo": null,
+      "fornecedor": null
+    },
+    {
+      "id": 12,
+      "nome": "Pastel de Frango",
+      "categoria": "Pastéis tradicionais – Frango",
+      "descricao": "",
+      "ingredientes": [
+        "frango"
+      ],
+      "preco": 12.0,
+      "disponivel": true,
+      "custo": null,
+      "fornecedor": null
+    },
+    {
+      "id": 13,
+      "nome": "Pastel de Frango e Queijo",
+      "categoria": "Pastéis tradicionais – Frango",
+      "descricao": "",
+      "ingredientes": [
+        "frango",
+        "queijo"
+      ],
+      "preco": 12.0,
+      "disponivel": true,
+      "custo": null,
+      "fornecedor": null
+    },
+    {
+      "id": 14,
+      "nome": "Pastel de Frango e Catupiry",
+      "categoria": "Pastéis tradicionais – Frango",
+      "descricao": "",
+      "ingredientes": [
+        "frango",
+        "catupiry"
+      ],
+      "preco": 12.0,
+      "disponivel": true,
+      "custo": null,
+      "fornecedor": null
+    },
+    {
+      "id": 15,
+      "nome": "Pastel de Frango e Milho",
+      "categoria": "Pastéis tradicionais – Frango",
+      "descricao": "",
+      "ingredientes": [
+        "frango",
+        "milho"
+      ],
+      "preco": 12.0,
+      "disponivel": true,
+      "custo": null,
+      "fornecedor": null
+    },
+    {
+      "id": 16,
+      "nome": "Pastel de Frango e Guariroba",
+      "categoria": "Pastéis tradicionais – Frango",
+      "descricao": "",
+      "ingredientes": [
+        "frango",
+        "guariroba"
+      ],
+      "preco": 12.0,
+      "disponivel": true,
+      "custo": null,
+      "fornecedor": null
+    },
+    {
+      "id": 17,
+      "nome": "Pastel de Frango e Bacon",
+      "categoria": "Pastéis tradicionais – Frango",
+      "descricao": "",
+      "ingredientes": [
+        "frango",
+        "bacon"
+      ],
+      "preco": 12.0,
+      "disponivel": true,
+      "custo": null,
+      "fornecedor": null
+    },
+    {
+      "id": 18,
+      "nome": "Pastel de Frango e Cheddar",
+      "categoria": "Pastéis tradicionais – Frango",
+      "descricao": "",
+      "ingredientes": [
+        "frango",
+        "cheddar"
+      ],
+      "preco": 12.0,
+      "disponivel": true,
+      "custo": null,
+      "fornecedor": null
+    },
+    {
+      "id": 19,
+      "nome": "Pastel de Frango e Pequi",
+      "categoria": "Pastéis tradicionais – Frango",
+      "descricao": "",
+      "ingredientes": [
+        "frango",
+        "pequi"
+      ],
+      "preco": 12.0,
+      "disponivel": true,
+      "custo": null,
+      "fornecedor": null
+    },
+    {
+      "id": 20,
+      "nome": "Pastel de Frango e Palmito",
+      "categoria": "Pastéis tradicionais – Frango",
+      "descricao": "",
+      "ingredientes": [
+        "frango",
+        "palmito"
+      ],
+      "preco": 12.0,
+      "disponivel": true,
+      "custo": null,
+      "fornecedor": null
+    },
+    {
+      "id": 21,
+      "nome": "Pastel de Frango e Azeitona",
+      "categoria": "Pastéis tradicionais – Frango",
+      "descricao": "",
+      "ingredientes": [
+        "frango",
+        "azeitona"
+      ],
+      "preco": 12.0,
+      "disponivel": true,
+      "custo": null,
+      "fornecedor": null
+    },
+    {
+      "id": 22,
+      "nome": "Pastel de Frango e Calabresa",
+      "categoria": "Pastéis tradicionais – Frango",
+      "descricao": "",
+      "ingredientes": [
+        "frango",
+        "calabresa"
+      ],
+      "preco": 12.0,
+      "disponivel": true,
+      "custo": null,
+      "fornecedor": null
+    },
+    {
+      "id": 23,
+      "nome": "Pastel de Presunto e Queijo",
+      "categoria": "Pastéis tradicionais – Variados",
+      "descricao": "",
+      "ingredientes": [
+        "presunto",
+        "queijo"
+      ],
+      "preco": 12.0,
+      "disponivel": true,
+      "custo": null,
+      "fornecedor": null
+    },
+    {
+      "id": 24,
+      "nome": "Pastel de Queijo",
+      "categoria": "Pastéis tradicionais – Variados",
+      "descricao": "",
+      "ingredientes": [
+        "queijo"
+      ],
+      "preco": 12.0,
+      "disponivel": true,
+      "custo": null,
+      "fornecedor": null
+    },
+    {
+      "id": 25,
+      "nome": "Pastel de Queijo e Milho",
+      "categoria": "Pastéis tradicionais – Variados",
+      "descricao": "",
+      "ingredientes": [
+        "queijo",
+        "milho"
+      ],
+      "preco": 12.0,
+      "disponivel": true,
+      "custo": null,
+      "fornecedor": null
+    },
+    {
+      "id": 26,
+      "nome": "Pastel de Queijo e Guariroba",
+      "categoria": "Pastéis tradicionais – Variados",
+      "descricao": "",
+      "ingredientes": [
+        "queijo",
+        "guariroba"
+      ],
+      "preco": 12.0,
+      "disponivel": true,
+      "custo": null,
+      "fornecedor": null
+    },
+    {
+      "id": 27,
+      "nome": "Pastel de Queijo e Palmito",
+      "categoria": "Pastéis tradicionais – Variados",
+      "descricao": "",
+      "ingredientes": [
+        "queijo",
+        "palmito"
+      ],
+      "preco": 12.0,
+      "disponivel": true,
+      "custo": null,
+      "fornecedor": null
+    },
+    {
+      "id": 28,
+      "nome": "Pastel de Calabresa e Queijo",
+      "categoria": "Pastéis tradicionais – Variados",
+      "descricao": "",
+      "ingredientes": [
+        "calabresa",
+        "queijo"
+      ],
+      "preco": 12.0,
+      "disponivel": true,
+      "custo": null,
+      "fornecedor": null
+    },
+    {
+      "id": 29,
+      "nome": "Pastel de Calabresa e Catupiry",
+      "categoria": "Pastéis tradicionais – Variados",
+      "descricao": "",
+      "ingredientes": [
+        "calabresa",
+        "catupiry"
+      ],
+      "preco": 12.0,
+      "disponivel": true,
+      "custo": null,
+      "fornecedor": null
+    },
+    {
+      "id": 30,
+      "nome": "Pastel Frango Goiano",
+      "categoria": "Pastéis especiais",
+      "descricao": "",
+      "ingredientes": [
+        "frango",
+        "milho",
+        "guariroba",
+        "pequi"
+      ],
+      "preco": 15.0,
+      "disponivel": true,
+      "custo": null,
+      "fornecedor": null
+    },
+    {
+      "id": 31,
+      "nome": "Pastel Pizza",
+      "categoria": "Pastéis especiais",
+      "descricao": "",
+      "ingredientes": [
+        "presunto",
+        "queijo",
+        "azeitona",
+        "tomate",
+        "orégano"
+      ],
+      "preco": 14.0,
+      "disponivel": true,
+      "custo": null,
+      "fornecedor": null
+    },
+    {
+      "id": 32,
+      "nome": "Pastel Tudo",
+      "categoria": "Pastéis especiais",
+      "descricao": "",
+      "ingredientes": [
+        "carne",
+        "frango",
+        "queijo",
+        "milho",
+        "presunto",
+        "guariroba",
+        "bacon",
+        "calabresa",
+        "catupiry",
+        "cheddar",
+        "pequi",
+        "palmito",
+        "cebola",
+        "azeitona"
+      ],
+      "preco": 30.0,
+      "disponivel": true,
+      "custo": null,
+      "fornecedor": null
+    },
+    {
+      "id": 33,
+      "nome": "Pastel 3 Queijos",
+      "categoria": "Pastéis especiais",
+      "descricao": "",
+      "ingredientes": [
+        "mussarela",
+        "catupiry",
+        "cheddar"
+      ],
+      "preco": 13.0,
+      "disponivel": true,
+      "custo": null,
+      "fornecedor": null
+    },
+    {
+      "id": 34,
+      "nome": "Pastel 4 Queijos",
+      "categoria": "Pastéis especiais",
+      "descricao": "",
+      "ingredientes": [
+        "mussarela",
+        "catupiry",
+        "cheddar",
+        "provolone"
+      ],
+      "preco": 15.0,
+      "disponivel": true,
+      "custo": null,
+      "fornecedor": null
+    },
+    {
+      "id": 35,
+      "nome": "Pastel Carol Carne",
+      "categoria": "Pastéis especiais",
+      "descricao": "",
+      "ingredientes": [
+        "carne",
+        "mussarela",
+        "bacon",
+        "palmito",
+        "milho"
+      ],
+      "preco": 15.0,
+      "disponivel": true,
+      "custo": null,
+      "fornecedor": null
+    },
+    {
+      "id": 36,
+      "nome": "Pastel Carol Frango",
+      "categoria": "Pastéis especiais",
+      "descricao": "",
+      "ingredientes": [
+        "frango",
+        "catupiry",
+        "bacon",
+        "palmito",
+        "milho"
+      ],
+      "preco": 15.0,
+      "disponivel": true,
+      "custo": null,
+      "fornecedor": null
+    },
+    {
+      "id": 37,
+      "nome": "Pastel Califórnia",
+      "categoria": "Pastéis doces",
+      "descricao": "",
+      "ingredientes": [
+        "mussarela",
+        "banana",
+        "açúcar",
+        "canela"
+      ],
+      "preco": 12.0,
+      "disponivel": true,
+      "custo": null,
+      "fornecedor": null
+    },
+    {
+      "id": 38,
+      "nome": "Pastel Califórnia com Doce de Leite",
+      "categoria": "Pastéis doces",
+      "descricao": "",
+      "ingredientes": [
+        "mussarela",
+        "banana",
+        "açúcar",
+        "canela",
+        "doce de leite"
+      ],
+      "preco": 14.0,
+      "disponivel": true,
+      "custo": null,
+      "fornecedor": null
+    },
+    {
+      "id": 39,
+      "nome": "Pastel Romeu e Julieta",
+      "categoria": "Pastéis doces",
+      "descricao": "",
+      "ingredientes": [
+        "mussarela",
+        "goiabada"
+      ],
+      "preco": 12.0,
+      "disponivel": true,
+      "custo": null,
+      "fornecedor": null
+    },
+    {
+      "id": 40,
+      "nome": "Pastel Chocolate",
+      "categoria": "Pastéis doces",
+      "descricao": "",
+      "ingredientes": [
+        "chocolate"
+      ],
+      "preco": 12.0,
+      "disponivel": true,
+      "custo": null,
+      "fornecedor": null
+    },
+    {
+      "id": 41,
+      "nome": "Pastel Brigadeiro",
+      "categoria": "Pastéis doces",
+      "descricao": "",
+      "ingredientes": [
+        "brigadeiro"
+      ],
+      "preco": 12.0,
+      "disponivel": true,
+      "custo": null,
+      "fornecedor": null
+    },
+    {
+      "id": 42,
+      "nome": "Pastel Doce de Leite",
+      "categoria": "Pastéis doces",
+      "descricao": "",
+      "ingredientes": [
+        "doce de leite"
+      ],
+      "preco": 12.0,
+      "disponivel": true,
+      "custo": null,
+      "fornecedor": null
+    },
+    {
+      "id": 43,
+      "nome": "Adicional de Carne",
+      "categoria": "Adicionais para pastel",
+      "descricao": "",
+      "ingredientes": [
+        "carne"
+      ],
+      "preco": 3.0,
+      "disponivel": true,
+      "custo": null,
+      "fornecedor": null
+    },
+    {
+      "id": 44,
+      "nome": "Adicional de Frango",
+      "categoria": "Adicionais para pastel",
+      "descricao": "",
+      "ingredientes": [
+        "frango"
+      ],
+      "preco": 3.0,
+      "disponivel": true,
+      "custo": null,
+      "fornecedor": null
+    },
+    {
+      "id": 45,
+      "nome": "Adicional de Queijo",
+      "categoria": "Adicionais para pastel",
+      "descricao": "",
+      "ingredientes": [
+        "queijo"
+      ],
+      "preco": 3.0,
+      "disponivel": true,
+      "custo": null,
+      "fornecedor": null
+    },
+    {
+      "id": 46,
+      "nome": "Adicional de Catupiry",
+      "categoria": "Adicionais para pastel",
+      "descricao": "",
+      "ingredientes": [
+        "catupiry"
+      ],
+      "preco": 3.0,
+      "disponivel": true,
+      "custo": null,
+      "fornecedor": null
+    },
+    {
+      "id": 47,
+      "nome": "Adicional de Milho",
+      "categoria": "Adicionais para pastel",
+      "descricao": "",
+      "ingredientes": [
+        "milho"
+      ],
+      "preco": 2.0,
+      "disponivel": true,
+      "custo": null,
+      "fornecedor": null
+    },
+    {
+      "id": 48,
+      "nome": "Adicional de Guariroba",
+      "categoria": "Adicionais para pastel",
+      "descricao": "",
+      "ingredientes": [
+        "guariroba"
+      ],
+      "preco": 3.0,
+      "disponivel": true,
+      "custo": null,
+      "fornecedor": null
+    },
+    {
+      "id": 49,
+      "nome": "Adicional de Bacon",
+      "categoria": "Adicionais para pastel",
+      "descricao": "",
+      "ingredientes": [
+        "bacon"
+      ],
+      "preco": 3.0,
+      "disponivel": true,
+      "custo": null,
+      "fornecedor": null
+    },
+    {
+      "id": 50,
+      "nome": "Adicional de Cheddar",
+      "categoria": "Adicionais para pastel",
+      "descricao": "",
+      "ingredientes": [
+        "cheddar"
+      ],
+      "preco": 3.0,
+      "disponivel": true,
+      "custo": null,
+      "fornecedor": null
+    },
+    {
+      "id": 51,
+      "nome": "Adicional de Palmito",
+      "categoria": "Adicionais para pastel",
+      "descricao": "",
+      "ingredientes": [
+        "palmito"
+      ],
+      "preco": 3.0,
+      "disponivel": true,
+      "custo": null,
+      "fornecedor": null
+    },
+    {
+      "id": 52,
+      "nome": "Adicional de Azeitona",
+      "categoria": "Adicionais para pastel",
+      "descricao": "",
+      "ingredientes": [
+        "azeitona"
+      ],
+      "preco": 2.0,
+      "disponivel": true,
+      "custo": null,
+      "fornecedor": null
+    },
+    {
+      "id": 53,
+      "nome": "Adicional de Calabresa",
+      "categoria": "Adicionais para pastel",
+      "descricao": "",
+      "ingredientes": [
+        "calabresa"
+      ],
+      "preco": 3.0,
+      "disponivel": true,
+      "custo": null,
+      "fornecedor": null
+    },
+    {
+      "id": 54,
+      "nome": "Adicional de Presunto",
+      "categoria": "Adicionais para pastel",
+      "descricao": "",
+      "ingredientes": [
+        "presunto"
+      ],
+      "preco": 3.0,
+      "disponivel": true,
+      "custo": null,
+      "fornecedor": null
+    },
+    {
+      "id": 55,
+      "nome": "Adicional de Pequi",
+      "categoria": "Adicionais para pastel",
+      "descricao": "",
+      "ingredientes": [
+        "pequi"
+      ],
+      "preco": 3.0,
+      "disponivel": true,
+      "custo": null,
+      "fornecedor": null
+    },
+    {
+      "id": 56,
+      "nome": "Tiras Tradicional",
+      "categoria": "Tiras",
+      "descricao": "",
+      "ingredientes": [],
+      "preco": 6.0,
+      "disponivel": true,
+      "custo": null,
+      "fornecedor": null
+    },
+    {
+      "id": 57,
+      "nome": "Tiras com Catupiry e Cheddar",
+      "categoria": "Tiras",
+      "descricao": "",
+      "ingredientes": [
+        "catupiry",
+        "cheddar"
+      ],
+      "preco": 11.0,
+      "disponivel": true,
+      "custo": null,
+      "fornecedor": null
+    },
+    {
+      "id": 58,
+      "nome": "Tiras com Doce de Leite",
+      "categoria": "Tiras",
+      "descricao": "",
+      "ingredientes": [
+        "doce de leite"
+      ],
+      "preco": 12.0,
+      "disponivel": true,
+      "custo": null,
+      "fornecedor": null
+    },
+    {
+      "id": 59,
+      "nome": "Mineiro KS 200 ml",
+      "categoria": "Bebidas",
+      "descricao": "",
+      "ingredientes": [],
+      "preco": 3.0,
+      "disponivel": true,
+      "custo": null,
+      "fornecedor": null
+    },
+    {
+      "id": 60,
+      "nome": "Refrigerante Lata",
+      "categoria": "Bebidas",
+      "descricao": "",
+      "ingredientes": [],
+      "preco": 6.0,
+      "disponivel": true,
+      "custo": null,
+      "fornecedor": null
+    },
+    {
+      "id": 61,
+      "nome": "Refrigerante 600 ml",
+      "categoria": "Bebidas",
+      "descricao": "",
+      "ingredientes": [],
+      "preco": 8.0,
+      "disponivel": true,
+      "custo": null,
+      "fornecedor": null
+    },
+    {
+      "id": 62,
+      "nome": "Coca-Cola 1 L",
+      "categoria": "Bebidas",
+      "descricao": "",
+      "ingredientes": [],
+      "preco": 10.0,
+      "disponivel": true,
+      "custo": null,
+      "fornecedor": null
+    },
+    {
+      "id": 63,
+      "nome": "Coca-Cola 2 L",
+      "categoria": "Bebidas",
+      "descricao": "",
+      "ingredientes": [],
+      "preco": 15.0,
+      "disponivel": true,
+      "custo": null,
+      "fornecedor": null
+    },
+    {
+      "id": 64,
+      "nome": "Mineiro 2 L",
+      "categoria": "Bebidas",
+      "descricao": "",
+      "ingredientes": [],
+      "preco": 12.0,
+      "disponivel": true,
+      "custo": null,
+      "fornecedor": null
+    },
+    {
+      "id": 65,
+      "nome": "Água com Gás",
+      "categoria": "Bebidas",
+      "descricao": "",
+      "ingredientes": [],
+      "preco": 4.0,
+      "disponivel": true,
+      "custo": null,
+      "fornecedor": null
+    },
+    {
+      "id": 66,
+      "nome": "Água sem Gás",
+      "categoria": "Bebidas",
+      "descricao": "",
+      "ingredientes": [],
+      "preco": 3.0,
+      "disponivel": true,
+      "custo": null,
+      "fornecedor": null
+    },
+    {
+      "id": 67,
+      "nome": "Suco 500 ml",
+      "categoria": "Sucos",
+      "descricao": "Sabores: caju, morango, abacaxi, goiaba, acerola, tamarindo, maracujá, laranja, cupuaçu, cajá",
+      "ingredientes": [
+        "caju",
+        "morango",
+        "abacaxi",
+        "goiaba",
+        "acerola",
+        "tamarindo",
+        "maracujá",
+        "laranja",
+        "cupuaçu",
+        "cajá"
+      ],
+      "preco": 10.0,
+      "disponivel": true,
+      "custo": null,
+      "fornecedor": null
+    },
+    {
+      "id": 68,
+      "nome": "Suco 1 Litro",
+      "categoria": "Sucos",
+      "descricao": "Sabores: caju, morango, abacaxi, goiaba, acerola, tamarindo, maracujá, laranja, cupuaçu, cajá",
+      "ingredientes": [
+        "caju",
+        "morango",
+        "abacaxi",
+        "goiaba",
+        "acerola",
+        "tamarindo",
+        "maracujá",
+        "laranja",
+        "cupuaçu",
+        "cajá"
+      ],
+      "preco": 18.0,
+      "disponivel": true,
+      "custo": null,
+      "fornecedor": null
+    },
+    {
+      "id": 69,
+      "nome": "Creme de Abacaxi",
+      "categoria": "Cremes",
+      "descricao": "",
+      "ingredientes": [
+        "abacaxi"
+      ],
+      "preco": 15.0,
+      "disponivel": true,
+      "custo": null,
+      "fornecedor": null
+    },
+    {
+      "id": 70,
+      "nome": "Creme de Morango",
+      "categoria": "Cremes",
+      "descricao": "",
+      "ingredientes": [
+        "morango"
+      ],
+      "preco": 15.0,
+      "disponivel": true,
+      "custo": null,
+      "fornecedor": null
+    },
+    {
+      "id": 71,
+      "nome": "Creme de Maracujá",
+      "categoria": "Cremes",
+      "descricao": "",
+      "ingredientes": [
+        "maracujá"
+      ],
+      "preco": 15.0,
+      "disponivel": true,
+      "custo": null,
+      "fornecedor": null
+    },
+    {
+      "id": 72,
+      "nome": "Creme de Goiaba",
+      "categoria": "Cremes",
+      "descricao": "",
+      "ingredientes": [
+        "goiaba"
+      ],
+      "preco": 15.0,
+      "disponivel": true,
+      "custo": null,
+      "fornecedor": null
+    },
+    {
+      "id": 73,
+      "nome": "Creme de Cupuaçu",
+      "categoria": "Cremes",
+      "descricao": "",
+      "ingredientes": [
+        "cupuaçu"
+      ],
+      "preco": 15.0,
+      "disponivel": true,
+      "custo": null,
+      "fornecedor": null
+    },
+    {
+      "id": 74,
+      "nome": "Creme de Uva",
+      "categoria": "Cremes",
+      "descricao": "",
+      "ingredientes": [
+        "uva"
+      ],
+      "preco": 15.0,
+      "disponivel": true,
+      "custo": null,
+      "fornecedor": null
+    },
+    {
+      "id": 75,
+      "nome": "Creme de Açaí",
+      "categoria": "Cremes",
+      "descricao": "",
+      "ingredientes": [
+        "açaí"
+      ],
+      "preco": 18.0,
+      "disponivel": true,
+      "custo": null,
+      "fornecedor": null
+    },
+    {
+      "id": 76,
+      "nome": "Açaí 300 ml",
+      "categoria": "Açaí",
+      "descricao": "Até 3 adicionais: leite ninho, leite condensado, banana, paçoca, granola, amendoim",
+      "ingredientes": [
+        "açaí",
+        "leite ninho",
+        "leite condensado",
+        "banana",
+        "paçoca",
+        "granola",
+        "amendoim"
+      ],
+      "preco": 18.0,
+      "disponivel": true,
+      "custo": null,
+      "fornecedor": null
+    },
+    {
+      "id": 77,
+      "nome": "Açaí 500 ml",
+      "categoria": "Açaí",
+      "descricao": "Até 3 adicionais: leite ninho, leite condensado, banana, paçoca, granola, amendoim",
+      "ingredientes": [
+        "açaí",
+        "leite ninho",
+        "leite condensado",
+        "banana",
+        "paçoca",
+        "granola",
+        "amendoim"
+      ],
+      "preco": 23.0,
+      "disponivel": true,
+      "custo": null,
+      "fornecedor": null
     }
   ]
 }

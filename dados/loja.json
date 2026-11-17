@@ -1,10 +1,31 @@
 {
-  "nome": "Pastelaria Exemplo",
-  "endereco": "Rua Exemplo, 123 - Aparecida de Goiânia",
-  "telefone": "(62) 90000-0000",
-  "horarios": [
-    {"dias": "Terça a sexta", "horario": "16h às 22h"},
-    {"dias": "Sábado e domingo", "horario": "15h às 23h"}
-  ],
-  "pagamentos": ["Dinheiro", "Pix", "Cartão de débito", "Cartão de crédito"]
+  "nome": "Cantinho do Pastel",
+  "endereco": "",
+  "telefone": "(62) 98587-2050",
+  "instagram": "@cantinho.pastelaria",
+  "funcionamento": {
+    "segunda": null,
+    "terca": {
+      "abre": "18:30",
+      "fecha": "22:00"
+    },
+    "quarta": {
+      "abre": "18:30",
+      "fecha": "22:00"
+    },
+    "quinta": {
+      "abre": "18:30",
+      "fecha": "22:00"
+    },
+    "sexta": {
+      "abre": "18:30",
+      "fecha": "22:00"
+    },
+    "sabado": {
+      "abre": "18:30",
+      "fecha": "22:00"
+    },
+    "domingo": null
+  },
+  "pagamentos": []
 }
