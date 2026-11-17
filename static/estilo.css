@@ -1,0 +1,104 @@
+:root {
+  --fundo: #fbf7f1;
+  --cartao: #ffffff;
+  --texto: #2b2118;
+  --suave: #7a6a5c;
+  --borda: #eadfd2;
+  --destaque: #d9480f;
+  --aberto: #2b8a3e;
+  --fechado: #c92a2a;
+}
+
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  font-family: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+  background: var(--fundo);
+  color: var(--texto);
+  max-width: 860px;
+  margin-inline: auto;
+  padding: 16px;
+}
+
+.topo { padding: 8px 0 12px; }
+.topo-linha { display: flex; align-items: center; gap: 12px; flex-wrap: wrap; }
+.topo h1 { margin: 0; font-size: 1.6rem; }
+.contato, .horarios { margin: 4px 0 0; color: var(--suave); font-size: .9rem; }
+
+.status {
+  padding: 4px 12px;
+  border-radius: 999px;
+  font-weight: 600;
+  font-size: .9rem;
+  background: #eee;
+}
+.status.aberto { background: #d3f9d8; color: var(--aberto); }
+.status.fechado { background: #ffe3e3; color: var(--fechado); }
+
+.busca { position: sticky; top: 0; background: var(--fundo); padding: 8px 0; z-index: 1; }
+.busca input {
+  width: 100%;
+  font-size: 1.1rem;
+  padding: 12px 14px;
+  border: 2px solid var(--borda);
+  border-radius: 10px;
+  background: var(--cartao);
+}
+.busca input:focus { outline: none; border-color: var(--destaque); }
+
+.categorias { display: flex; gap: 8px; flex-wrap: wrap; margin: 8px 0 16px; }
+.categorias button {
+  border: 1px solid var(--borda);
+  background: var(--cartao);
+  border-radius: 999px;
+  padding: 6px 12px;
+  cursor: pointer;
+  font-size: .85rem;
+  color: var(--texto);
+}
+.categorias button.ativa { background: var(--destaque); border-color: var(--destaque); color: #fff; }
+
+.aviso { background: #fff3bf; border: 1px solid #ffd43b; padding: 10px 12px; border-radius: 8px; }
+
+.grupo h2 { font-size: 1rem; color: var(--destaque); margin: 20px 0 8px; text-transform: uppercase; letter-spacing: .04em; }
+
+.item {
+  display: flex;
+  justify-content: space-between;
+  gap: 12px;
+  background: var(--cartao);
+  border: 1px solid var(--borda);
+  border-radius: 10px;
+  padding: 10px 14px;
+  margin-bottom: 8px;
+}
+.item-nome { font-weight: 600; }
+.item-info { color: var(--suave); font-size: .85rem; margin-top: 2px; }
+.item-preco { font-weight: 700; white-space: nowrap; }
+.item.esgotado { opacity: .55; }
+.etiqueta {
+  display: inline-block;
+  margin-left: 8px;
+  font-size: .7rem;
+  font-weight: 700;
+  color: var(--fechado);
+  border: 1px solid var(--fechado);
+  border-radius: 4px;
+  padding: 0 4px;
+  vertical-align: middle;
+}
+
+.vazio { color: var(--suave); text-align: center; padding: 32px 0; }
+
+.rodape {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 8px;
+  color: var(--suave);
+  font-size: .8rem;
+  border-top: 1px solid var(--borda);
+  margin-top: 24px;
+  padding-top: 12px;
+}

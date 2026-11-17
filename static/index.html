@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Consulta de Cardápio</title>
+  <link rel="stylesheet" href="/estilo.css">
+  <script src="/app.js" defer></script>
+</head>
+<body>
+  <header class="topo">
+    <div class="topo-linha">
+      <h1 id="nome-loja">Carregando…</h1>
+      <span id="status" class="status">…</span>
+    </div>
+    <p id="contato" class="contato"></p>
+    <p id="horarios" class="horarios"></p>
+  </header>
+
+  <div class="busca">
+    <input id="campo-busca" type="search" autocomplete="off" autofocus
+           placeholder="Buscar sabor ou ingrediente (ex.: frango, catupiry, pequi)">
+  </div>
+
+  <nav id="categorias" class="categorias"></nav>
+
+  <p id="aviso" class="aviso" hidden></p>
+
+  <main id="cardapio"></main>
+
+  <footer class="rodape">
+    <span id="contagem"></span>
+    <span>Comunicação com o servidor protegida por TLS</span>
+  </footer>
+</body>
+</html>

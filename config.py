@@ -8,6 +8,9 @@ HOST = "127.0.0.1"
 PORTA = 5050
 TAMANHO_MAX_MENSAGEM = 1_000_000
 
+WEB_HOST = "127.0.0.1"
+WEB_PORTA = 8080
+
 NOME_SERVIDOR_TLS = "localhost"
 CERT_ARQUIVO = BASE_DIR / "certs" / "servidor.crt"
 CHAVE_ARQUIVO = BASE_DIR / "certs" / "servidor.key"
