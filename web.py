@@ -14,15 +14,18 @@ TIPOS = {
     ".css": "text/css; charset=utf-8",
     ".js": "text/javascript; charset=utf-8",
 }
-ACOES_PERMITIDAS = {"listar", "buscar", "detalhar", "loja", "status"}
+ACOES_PERMITIDAS = {
+    "listar", "buscar", "detalhar", "loja", "status",
+    "login", "logout", "admin_listar", "salvar_item", "remover_item", "disponibilidade", "atualizar_loja",
+}
+ROTAS = {"/": "/index.html", "/admin": "/admin.html"}
 TAMANHO_MAX_CORPO = 10_000
 
 
 class Manipulador(BaseHTTPRequestHandler):
     def do_GET(self):
         caminho = urlsplit(self.path).path
-        if caminho == "/":
-            caminho = "/index.html"
+        caminho = ROTAS.get(caminho, caminho)
 
         arquivo = (PASTA_STATIC / caminho.lstrip("/")).resolve()
         if arquivo.parent != PASTA_STATIC or arquivo.suffix not in TIPOS or not arquivo.is_file():

@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Área do dono</title>
+  <link rel="stylesheet" href="/estilo.css">
+  <script src="/admin.js" defer></script>
+</head>
+<body class="admin">
+  <header class="topo">
+    <div class="topo-linha">
+      <h1>Área do dono</h1>
+      <button id="botao-sair" type="button" class="botao secundario" hidden>Sair</button>
+    </div>
+    <p class="contato"><a href="/">← Voltar à tela do atendente</a></p>
+  </header>
+
+  <section id="tela-login" class="painel login">
+    <h2>Entrar</h2>
+    <form id="form-login">
+      <label>Senha
+        <input id="campo-senha" type="password" autocomplete="current-password" required autofocus>
+      </label>
+      <button type="submit" class="botao">Entrar</button>
+    </form>
+    <p id="aviso-login" class="aviso" hidden></p>
+  </section>
+
+  <div id="tela-painel" hidden>
+    <p id="aviso" class="aviso" hidden></p>
+
+    <section class="painel">
+      <div class="topo-linha">
+        <h2 id="titulo-form-item">Novo item</h2>
+        <button id="botao-novo" type="button" class="botao secundario" hidden>Cancelar edição</button>
+      </div>
+      <form id="form-item" class="form-grade">
+        <label>Nome <input name="nome" required maxlength="80"></label>
+        <label>Categoria <input name="categoria" list="lista-categorias" required maxlength="60"></label>
+        <datalist id="lista-categorias"></datalist>
+        <label class="largo">Descrição <input name="descricao" maxlength="300"></label>
+        <label class="largo">Ingredientes (separados por vírgula) <input name="ingredientes"></label>
+        <label>Preço (R$) <input name="preco" type="number" step="0.01" min="0" max="1000" required></label>
+        <label>Custo (R$, opcional) <input name="custo" type="number" step="0.01" min="0" max="1000"></label>
+        <label>Fornecedor (opcional) <input name="fornecedor" maxlength="80"></label>
+        <label class="marcar"><input name="disponivel" type="checkbox" checked> Disponível</label>
+        <div class="largo acoes">
+          <button type="submit" class="botao">Salvar item</button>
+          <span id="msg-item" class="mensagem"></span>
+        </div>
+      </form>
+    </section>
+
+    <section class="painel">
+      <h2>Itens do cardápio</h2>
+      <div id="lista-itens"></div>
+    </section>
+
+    <section class="painel">
+      <h2>Dados da loja</h2>
+      <form id="form-loja" class="form-grade">
+        <label>Nome <input name="nome" required maxlength="80"></label>
+        <label>Telefone <input name="telefone" maxlength="30"></label>
+        <label>Endereço <input name="endereco" maxlength="150"></label>
+        <label>Instagram <input name="instagram" maxlength="40"></label>
+        <label class="largo">Formas de pagamento (separadas por vírgula) <input name="pagamentos"></label>
+        <div class="largo">
+          <h3>Horário de funcionamento</h3>
+          <div id="dias" class="dias"></div>
+        </div>
+        <div class="largo acoes">
+          <button type="submit" class="botao">Salvar dados da loja</button>
+          <span id="msg-loja" class="mensagem"></span>
+        </div>
+      </form>
+    </section>
+  </div>
+
+  <footer class="rodape">
+    <span>Acesso restrito ao dono da pastelaria</span>
+    <span>Comunicação com o servidor protegida por TLS</span>
+  </footer>
+</body>
+</html>
