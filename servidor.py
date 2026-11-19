@@ -1,4 +1,5 @@
 import socket
+from admin import ACOES_ADMIN, mascarar
 from config import CERT_ARQUIVO, CHAVE_ARQUIVO, HOST, PORTA
 from protocolo import enviar, receber, ErroProtocolo
 import json
@@ -94,6 +95,7 @@ ACOES = {
     "detalhar": acao_detalhar,
     "loja": acao_loja,
     "status": acao_status,
+    **ACOES_ADMIN,
 }
 
 
@@ -121,7 +123,7 @@ def main():
                 try:
                     with contexto.wrap_socket(conexao, server_side=True) as conexao_tls:
                         pedido = receber(conexao_tls)
-                        print(f"{origem} [{conexao_tls.version()}] pediu: {pedido}")
+                        print(f"{origem} [{conexao_tls.version()}] pediu: {mascarar(pedido)}")
                         enviar(conexao_tls, processar(pedido))
                 except ssl.SSLError as erro:
                     print(f"{origem} falha no TLS: {erro.reason}")
