@@ -117,6 +117,8 @@ function desenharCardapio() {
     secao.append(el("h2", "", categoria), ...itens.map(desenharItem));
     main.append(secao);
   }
+  // os cartões entram um depois do outro (só os primeiros, pra não demorar)
+  main.querySelectorAll(".item").forEach((cartao, i) => cartao.style.setProperty("--ordem", Math.min(i, 14)));
 }
 
 async function buscar(termo) {
